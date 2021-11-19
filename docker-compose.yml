@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: build-env
+    working_dir: /workspace
+#    environment:
+#      - USER=$USER
+#      - DISCORD_TOKEN=$DISCORD_TOKEN
+#      - HEROKU_API_KEY=$HEROKU_API_KEY
+#      - HEROKU_APP_NAME=$HEROKU_APP_NAME
